@@ -12,10 +12,10 @@
            
       </div>
       <div class="col-md-1" [ngStyle]="fruit.style">
-          <button [disabled]="count==0" (click)="clickUp(count)">Up</button>
+          <button [disabled]="count==0" (click)="clickUp(count)" style='color:black'>Up</button>
       </div>
       <div class="col-md-1"  [ngStyle]="fruit.style">
-          <button [disabled]="count==size" (click)="clickDown(count)"> Down</button>
+          <button [disabled]="count==size" (click)="clickDown(count)" style='color:black'> Down</button>
       </div>
       
       

@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 export interface styleStruct{
-  'background-color':string
-
+  'background-color':string;
+  'color':string;  
+  'margin-top':string;
+  'height':string;
 }
 
 export interface fruitStruct {
      name:string;
+
      style:styleStruct;
 
 
@@ -23,13 +26,14 @@ export class AppComponent {
 
   fruits :fruitStruct[]=[
                         { name:"lemon",
-                          style:{'background-color':'green' }
+                          
+                          style:{'background-color':'green','color':'yellow','margin-top':'10px','height':'35px' }
                         },
                         { name:"banana",
-                        style:{'background-color':'yellow' }
+                        style:{'background-color':'yellow','color':'green','margin-top':'10px', 'height':'35px' }
                       },
                       { name:"apple",
-                      style:{'background-color':'red' }
+                      style:{'background-color':'red','color':'white','margin-top':'10px' ,'height':'35px' }
                     }
 
 
